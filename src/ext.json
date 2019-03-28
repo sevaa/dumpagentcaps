@@ -1,0 +1,37 @@
+{
+    "manifestVersion": 1,
+    "id": "dumpagentcaps",
+    "version": "1.0.0",
+    "name": "Dump Agent Capabilities",
+    "description": "Task for retrieving user defined capabilities of the current agent and storing them in variables",
+    "publisher": "sevaalekseyev",
+    "targets": [{"id": "Microsoft.VisualStudio.Services"}],
+    "categories": ["Build and release"],
+    "tags": ["agent","capabilities"],
+    "links":
+    {
+        "support": {"uri": "https://github.com/sevaa/dumpagentcaps/issues"}
+    },
+    "icons": {"default": "img/logo.png"},
+    "galleryFlags": ["Public"],
+    "content":
+    {
+        "details": { "path" : "readme.md" }
+    },
+    "contributions":
+    [
+        {
+            "id": "dumpagentcaps",
+            "type": "ms.vss-distributed-task.task",
+            "targets": ["ms.vss-distributed-task.tasks"],
+            "properties": { "name": "DumpAgentCaps" }
+        }
+    ],
+    "files":
+    [
+        {"path": "DumpAgentCaps"},
+        {"path": "img", "addressable": true}
+    ],
+    "scopes": [],
+    "contributionTypes": []
+}
