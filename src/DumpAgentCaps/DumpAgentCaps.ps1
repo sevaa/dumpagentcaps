@@ -43,7 +43,9 @@ if($Security -ne "Context")
 
 $AgentCli = $VSS.GetClient([Microsoft.TeamFoundation.DistributedTask.WebApi.TaskAgentHttpClient])
 
-$AgentConfig = Get-Content "$Env:AGENT_HOMEDIRECTORY\.agent" -Raw | ConvertFrom-Json
+$AgentConfig = Get-Content "$Env:AGENT_HOMEDIRECTORY\.agent" -Raw
+$AgentConfig = $AgentConfig.Replace("""workFolder""", """_workFolder""")
+$AgentConfig = $AgentConfig | ConvertFrom-Json
 $Agent = $AgentCli.GetAgentAsync($AgentConfig.PoolId, $Env:AGENT_ID, $TRUE, $FALSE, $NULL, $NULL, [System.Threading.CancellationToken]::None).GetAwaiter().GetResult()
 
 foreach($CapName in $Agent.UserCapabilities.Keys)

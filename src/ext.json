@@ -1,12 +1,12 @@
 {
     "manifestVersion": 1,
     "id": "dumpagentcaps",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "name": "Dump Agent Capabilities",
     "description": "Task for retrieving user defined capabilities of the current agent and storing them in variables",
     "publisher": "sevaalekseyev",
     "targets": [{"id": "Microsoft.VisualStudio.Services"}],
-    "categories": ["Build and release"],
+    "categories": ["Azure Pipelines"],
     "tags": ["agent","capabilities"],
     "links":
     {
