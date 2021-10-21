@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "dumpagentcaps",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "Dump Agent Capabilities",
     "description": "Task for retrieving user defined capabilities of the current agent and storing them in variables",
     "publisher": "sevaalekseyev",
@@ -16,7 +16,9 @@
     "galleryFlags": ["Public"],
     "content":
     {
-        "details": { "path" : "readme.md" }
+        "details": { "path" : "readme.md" },
+        "license": { "path" : "license.md" },
+        "privacypolicy": { "path" : "privacy.md" }
     },
     "contributions":
     [
