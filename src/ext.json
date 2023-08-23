@@ -1,16 +1,22 @@
 {
     "manifestVersion": 1,
     "id": "dumpagentcaps",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Dump Agent Capabilities",
     "description": "Task for retrieving user defined capabilities of the current agent and storing them in variables",
     "publisher": "sevaalekseyev",
     "targets": [{"id": "Microsoft.VisualStudio.Services"}],
     "categories": ["Azure Pipelines"],
     "tags": ["agent","capabilities"],
+    "repository":
+    {
+        "type": "git",
+        "uri": "https://github.com/sevaa/dumpagentcaps"
+    },
     "links":
     {
-        "support": {"uri": "https://github.com/sevaa/dumpagentcaps/issues"}
+        "support": {"uri": "https://github.com/sevaa/dumpagentcaps/issues"},
+        "repository": {"uri": "https://github.com/sevaa/dumpagentcaps"}
     },
     "icons": {"default": "img/logo.png"},
     "galleryFlags": ["Public"],
